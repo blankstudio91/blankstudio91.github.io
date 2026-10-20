@@ -12,10 +12,10 @@ Live address (once published): https://blankstudio91.github.io
 | `index.html` | Home: hero, apps index, TrackLore showcase, "Coming Soon" exhibit |
 | `tracklore.html` | TrackLore app page |
 | `about.html` | About + contact |
-| `support.html` | TrackLore support + privacy policy |
+| `support.html` | TrackLore support, privacy policy and terms of use |
 | `css/styles.css` | All styling. Light and dark colors are the variables at the top |
 | `js/theme.js` | Dark mode toggle (remembers the choice across pages) |
-| `images/` | App icon and favicon |
+| `images/` | Blank Studio logo (SVG), favicon, share image, TrackLore icon |
 
 ## Still to do
 
@@ -41,3 +41,4 @@ Live address (once published): https://blankstudio91.github.io
 
 - Support URL: `https://blankstudio91.github.io/support.html`
 - Privacy Policy URL: `https://blankstudio91.github.io/support.html#privacy`
+- Terms of Use URL (for the app description or License Agreement link): `https://blankstudio91.github.io/support.html#terms`

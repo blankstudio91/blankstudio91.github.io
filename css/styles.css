@@ -89,10 +89,16 @@ em { font-style: italic; }
   display: flex; flex-wrap: wrap; align-items: center; gap: 16px;
   padding-top: 28px; padding-bottom: 28px;
 }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
-.brand:hover { color: var(--ink); }
-.brand-mark { width: 22px; height: 22px; border: 1.5px solid var(--ink); display: block; }
-.brand-name { font-weight: 600; letter-spacing: -0.01em; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink); min-height: 44px; }
+.brand:hover { color: var(--ink); opacity: 0.75; }
+
+/* Logo: dark SVGs, inverted to light in dark mode. */
+.logo-mark, .logo-word, .logo-full { display: block; transition: filter 0.45s ease; }
+[data-theme="dark"] .logo-mark, [data-theme="dark"] .logo-word, [data-theme="dark"] .logo-full { filter: invert(1); }
+.logo-mark { width: 26px; height: auto; }
+.logo-word { height: 17px; width: auto; margin-top: 4px; }
+.footer-brand .logo-mark { width: 30px; }
+.footer-brand .logo-word { height: 20px; }
 
 .nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: 28px; font-size: 15px; }
 .nav a { text-decoration: none; }
@@ -300,8 +306,6 @@ em { font-style: italic; }
   display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 20px;
   border-top: 1.5px solid var(--ink); padding-top: 24px; font-size: 15px;
 }
-.footer-brand .brand-mark { width: 26px; height: 26px; }
-.footer-brand .brand-name { font-family: var(--serif); font-weight: 400; font-size: 24px; line-height: 1; }
 .footer-nav { display: flex; flex-wrap: wrap; gap: 24px; }
 .footer-nav a { text-decoration: none; }
 .copyright { font-size: 14px; color: var(--muted); }
@@ -356,6 +360,8 @@ em { font-style: italic; }
 .about-copy { flex: 1 1 560px; display: flex; flex-direction: column; gap: 32px; }
 .about-copy h1 { font-size: clamp(48px, 7vw, 104px); line-height: 0.95; letter-spacing: -0.02em; text-wrap: balance; }
 .about-copy .story { display: flex; flex-direction: column; gap: 18px; max-width: 600px; font-size: 19px; color: var(--body); }
+.about-logo { flex: 0 1 340px; align-self: center; display: flex; justify-content: center; padding: 24px 0; }
+.about-logo .logo-full { width: min(300px, 70vw); height: auto; }
 .photo-placeholder {
   flex: 0 1 380px; aspect-ratio: 4 / 5; border: 1.5px dashed var(--dash); border-radius: 4px;
   display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 15px;
