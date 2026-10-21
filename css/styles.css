@@ -421,3 +421,88 @@ em { font-style: italic; }
   .velvet { height: 300px; }
   .site-footer { margin-top: 112px; }
 }
+
+/* ---------- ChessCapture panel (keeps the app's own walnut-and-board look in both themes) ---------- */
+
+.cc-panel {
+  position: relative; overflow: hidden;
+  background: #231D17; color: #F4EEE3;
+  border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 48px;
+  padding: clamp(32px, 6vw, 80px);
+}
+.cc-panel > * { position: relative; }
+.cc-panel .board-glow {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(520px 420px at 85% 15%, rgba(231, 212, 177, 0.16), transparent 70%),
+    radial-gradient(420px 360px at 10% 95%, rgba(76, 156, 104, 0.22), transparent 70%);
+}
+.cc-panel .board-pattern {
+  position: absolute; right: -60px; bottom: -60px; width: 360px; height: 360px; pointer-events: none;
+  background: repeating-conic-gradient(rgba(231, 212, 177, 0.07) 0% 25%, transparent 0% 50%) 0 0 / 90px 90px;
+  transform: rotate(-12deg);
+}
+.cc-panel .tl-copy p { color: #D9CDB8; }
+.cc-panel .tl-id .label { color: #CDBFA8; }
+.cc-panel .tl-id img { border-radius: 17px; }
+.btn-cc { background: #4C9C68; color: #FFFFFF; }
+.btn-cc:hover { color: #FFFFFF; background: #3F8758; }
+.btn-ghost-cream { border: 1.5px solid rgba(244, 238, 227, 0.5); color: #F4EEE3; font-weight: 500; }
+.btn-ghost-cream:hover { color: #F4EEE3; border-color: #F4EEE3; }
+.small-cream { font-size: 14px; color: #CDBFA8; }
+
+/* Real app screenshot inside a phone frame */
+.phone-shot {
+  width: 250px; flex: none; border-radius: 44px; overflow: hidden;
+  border: 8px solid #141210; background: #FBF9F6;
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+}
+.phone-shot img { width: 100%; height: auto; }
+
+/* Drawn FEN result card (matches the app's review screen styling) */
+.fen-card {
+  width: 250px; flex: none; box-sizing: border-box;
+  background: #FBF9F6; color: #1A1815; border-radius: 26px; padding: 22px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  display: flex; flex-direction: column; gap: 14px; font-size: 14px;
+}
+.fen-card .fen-label { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #6B645A; font-weight: 600; }
+.fen-card code {
+  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 12px; line-height: 1.5;
+  background: #F1ECE3; border-radius: 12px; padding: 10px 12px; word-break: break-all; color: #1A1815;
+}
+.fen-card .fen-btn { border-radius: 12px; padding: 11px 12px; text-align: center; font-weight: 600; }
+.fen-card .fen-btn.primary { background: #4C9C68; color: #FFFFFF; }
+.fen-card .fen-btn.secondary { background: #F1ECE3; color: #1A1815; }
+.fen-card .match { display: flex; align-items: center; gap: 8px; color: #3F8758; font-weight: 600; font-size: 13px; }
+.cc-phones { flex: 1 1 440px; display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 20px; }
+.cc-phones .phone-shot { width: 230px; }
+.cc-phones .fen-card { width: 220px; margin-top: 140px; }
+@media (max-width: 640px) { .cc-phones .fen-card { margin-top: 0; width: 250px; } .cc-phones .phone-shot { width: 250px; } }
+
+/* Privacy highlight block on the ChessCapture page */
+.on-device {
+  border: 1.5px solid var(--ink); border-radius: var(--radius); padding: clamp(32px, 6vw, 72px);
+  display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between; align-items: center;
+}
+.on-device-copy { flex: 1 1 420px; display: flex; flex-direction: column; gap: 18px; }
+.on-device-copy h2 { font-size: clamp(40px, 5vw, 64px); line-height: 1; }
+.on-device-copy p { max-width: 560px; color: var(--body); }
+.on-device-facts { flex: 0 1 340px; list-style: none; margin: 0; padding: 0 0 0 28px; border-left: 1.5px solid var(--ink); display: flex; flex-direction: column; gap: 14px; }
+.on-device-facts strong { display: block; }
+.on-device-facts span { color: var(--muted); font-size: 15px; }
+
+/* App switcher on support pages */
+.app-switch { display: flex; flex-wrap: wrap; gap: 10px; }
+.app-switch a {
+  display: inline-flex; align-items: center; gap: 10px; min-height: 48px;
+  padding: 6px 18px 6px 6px; border: 1.5px solid var(--line); border-radius: 999px;
+  text-decoration: none; font-weight: 600; font-size: 15px;
+}
+.app-switch a img { width: 34px; height: 34px; border-radius: 9px; object-fit: cover; }
+.app-switch a[aria-current="page"] { border-color: var(--ink); }
+.app-switch a:not([aria-current="page"]) { color: var(--muted); }
+.support-form { display: flex; flex-direction: column; gap: 20px; max-width: 680px; }
+.support-form .btn { align-self: flex-start; }
+.form-note { font-size: 14px; color: var(--muted); }

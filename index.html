@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blank Studio — Small, focused apps for iPhone</title>
-  <meta name="description" content="Blank Studio is an independent app studio making small, focused apps for iPhone, including TrackLore.">
+  <meta name="description" content="Blank Studio is an independent app studio making small, focused apps for iPhone, including TrackLore and ChessCapture.">
   <meta property="og:title" content="Blank Studio">
   <meta property="og:description" content="Small, focused apps for iPhone.">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
@@ -61,8 +61,13 @@
         <span class="name">TrackLore</span>
         <span class="meta">iOS · Entertainment</span>
       </a>
-      <a class="index-row is-upcoming" href="#exhibit-02">
+      <a class="index-row" href="chesscapture.html">
         <span class="num">02</span>
+        <span class="name">ChessCapture</span>
+        <span class="meta">iOS · Chess</span>
+      </a>
+      <a class="index-row is-upcoming" href="#exhibit-03">
+        <span class="num">03</span>
         <span class="name">Untitled</span>
         <span class="meta">Coming soon</span>
       </a>
@@ -98,18 +103,47 @@
       </div>
     </section>
 
-    <!-- ===== App 02: Coming soon (replace with a full section like TrackLore's when it launches) ===== -->
-    <section id="exhibit-02" class="wrap" style="margin-top: 48px" aria-label="Coming soon">
+    <!-- ===== App 02: ChessCapture ===== -->
+    <section class="wrap" style="margin-top: 48px" aria-labelledby="cc-heading">
+      <div class="cc-panel">
+        <div class="board-glow" aria-hidden="true"></div>
+        <div class="board-pattern" aria-hidden="true"></div>
+        <div class="tl-copy">
+          <div class="tl-id">
+            <img src="images/chesscapture-icon.jpg" alt="ChessCapture app icon" width="72" height="72">
+            <div>
+              <span class="label">02 — Now on iPhone</span>
+              <span class="title">ChessCapture</span>
+            </div>
+          </div>
+          <h2 id="cc-heading" class="serif">Snap the board — <em>get the position.</em></h2>
+          <p>Take a photo of any chess board and ChessCapture reads every piece on your phone, then gives you the FEN to analyze on Lichess or Chess.com.</p>
+          <div class="btn-row">
+            <a class="btn btn-cc" href="chesscapture.html">Explore ChessCapture</a>
+            <!-- TODO: replace # with the ChessCapture App Store link -->
+            <a class="btn btn-ghost-cream" href="#">Download on the App Store</a>
+          </div>
+        </div>
+        <div class="tl-phones">
+          <div class="phone-shot" style="width: 270px">
+            <img src="images/chesscapture-editor.jpg" alt="ChessCapture board editor showing the starting position" width="600" height="1304">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== App 03: Coming soon (replace with a full section like TrackLore's when it launches) ===== -->
+    <section id="exhibit-03" class="wrap" style="margin-top: 48px" aria-label="Coming soon">
       <div class="exhibit">
-        <span class="eyebrow exhibit-tag">02 — Coming soon</span>
+        <span class="eyebrow exhibit-tag">03 — Coming soon</span>
         <div class="exhibit-stage">
           <div class="velvet" role="img" aria-label="A covered exhibit draped in velvet, labelled Coming Soon"><span>Coming Soon</span></div>
           <div class="velvet-hem" aria-hidden="true"></div>
-          <div class="plinth"><span class="plaque">No. 02</span></div>
+          <div class="plinth"><span class="plaque">No. 03</span></div>
           <div class="floor-shadow" aria-hidden="true"></div>
         </div>
         <aside class="wall-label" aria-label="Exhibit label">
-          <span class="eyebrow" style="font-size: 12px">No. 02</span>
+          <span class="eyebrow" style="font-size: 12px">No. 03</span>
           <span class="title">Untitled</span>
           <span>Blank Studio, 2026</span>
           <span>iPhone app · in progress</span>
@@ -127,10 +161,9 @@
       </a>
       <nav class="footer-nav" aria-label="Footer">
         <a href="tracklore.html">TrackLore</a>
+        <a href="chesscapture.html">ChessCapture</a>
         <a href="about.html">About</a>
-        <a href="support.html">Support &amp; Privacy</a>
-        <a href="support.html#terms">Terms</a>
-        <a href="mailto:support@tracklore.app">support@tracklore.app</a>
+        <a href="support.html">Support, Privacy &amp; Terms</a>
       </nav>
     </div>
     <span class="copyright">© 2026 Blank Studio</span>

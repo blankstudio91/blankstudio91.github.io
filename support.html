@@ -48,13 +48,11 @@
         </div>
         <h1 class="serif">Support <em>&amp; privacy</em></h1>
       </div>
-      <!-- When you add a second app, give it its own support page and add an <option> for it here. -->
-      <div class="field app-picker">
-        <label for="app">App</label>
-        <select id="app" onchange="if (this.value) window.location.href = this.value;">
-          <option value="" selected>TrackLore</option>
-        </select>
-      </div>
+      <!-- When you add an app, give it its own support page and add a link for it here and on the other support pages. -->
+      <nav class="app-switch" aria-label="Choose an app">
+        <a href="support.html" aria-current="page"><img src="images/tracklore-icon.jpg" alt="" width="34" height="34">TrackLore</a>
+        <a href="chesscapture-support.html"><img src="images/chesscapture-icon.jpg" alt="" width="34" height="34">ChessCapture</a>
+      </nav>
     </section>
 
     <div class="wrap support-layout">
@@ -71,6 +69,41 @@
           <p class="copy">The fastest way to reach us is the support form inside the TrackLore app. You can also email us directly — please include your device model and iOS version.</p>
           <a class="email" href="mailto:support@tracklore.app">support@tracklore.app</a>
           <p class="muted" style="font-size: 15px">Wrong or missing soundtrack info? Use “Report” on any result — it's the quickest way to get it fixed.</p>
+          <!--
+            VISUAL ONLY for now: submitting does nothing.
+            To make it work later: create a free form at formspree.io with the business email,
+            then add  action="https://formspree.io/f/YOUR_FORM_ID" method="POST"  to the <form> tag
+            and delete  onsubmit="return false;"
+          -->
+          <form class="support-form" onsubmit="return false;">
+            <input type="hidden" name="app" value="TrackLore">
+            <div class="field-row">
+              <div class="field">
+                <label for="tl-name">Name</label>
+                <input id="tl-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="tl-email">Email</label>
+                <input id="tl-email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="tl-subject">Subject</label>
+              <select id="tl-subject" name="subject">
+                <option>Song recognition</option>
+                <option>Soundtrack information</option>
+                <option>Purchases and ads</option>
+                <option>iCloud sync and my library</option>
+                <option>Feature idea</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="tl-message">Message</label>
+              <textarea id="tl-message" name="message" rows="6" required></textarea>
+            </div>
+            <button class="btn btn-solid" type="submit">Send message</button>
+          </form>
         </section>
 
         <section id="faq" aria-labelledby="faq-h">
@@ -300,6 +333,7 @@
       </a>
       <nav class="footer-nav" aria-label="Footer">
         <a href="tracklore.html">TrackLore</a>
+        <a href="chesscapture.html">ChessCapture</a>
         <a href="about.html">About</a>
       </nav>
     </div>
