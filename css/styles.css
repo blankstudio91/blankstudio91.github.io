@@ -506,3 +506,57 @@ em { font-style: italic; }
 .support-form { display: flex; flex-direction: column; gap: 20px; max-width: 680px; }
 .support-form .btn { align-self: flex-start; }
 .form-note { font-size: 14px; color: var(--muted); }
+
+/* ---------- Live Wage panel (keeps the app's own charcoal-and-green look in both themes) ---------- */
+
+.lw-panel {
+  position: relative; overflow: hidden;
+  background: #141312; color: #F8F4ED;
+  border: 1px solid rgba(255, 255, 255, 0.08); border-radius: var(--radius);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 48px;
+  padding: clamp(32px, 6vw, 80px);
+}
+.lw-panel > * { position: relative; }
+.lw-panel .lw-glow {
+  position: absolute; inset: 0; pointer-events: none;
+  background:
+    radial-gradient(520px 420px at 82% 30%, rgba(140, 198, 63, 0.16), transparent 70%),
+    radial-gradient(420px 360px at 8% 100%, rgba(140, 198, 63, 0.10), transparent 70%);
+}
+.lw-panel .lw-ticks {
+  position: absolute; right: -140px; bottom: -160px; width: 520px; height: 520px; border-radius: 50%; pointer-events: none;
+  background: repeating-conic-gradient(rgba(140, 198, 63, 0.16) 0deg 1.2deg, transparent 1.2deg 6deg);
+  -webkit-mask: radial-gradient(circle, transparent 0 62%, #000 62.5% 70%, transparent 70.5%);
+  mask: radial-gradient(circle, transparent 0 62%, #000 62.5% 70%, transparent 70.5%);
+}
+.lw-panel .tl-copy p { color: #D6CEC3; }
+.lw-panel .tl-id .label { color: #B8B0A4; }
+.lw-green { color: #A6D86A; }
+.btn-lw { background: #8CC63F; color: #141312; }
+.btn-lw:hover { color: #141312; background: #9DD253; }
+.btn-ghost-warm { border: 1.5px solid rgba(248, 244, 237, 0.5); color: #F8F4ED; font-weight: 500; }
+.btn-ghost-warm:hover { color: #F8F4ED; border-color: #F8F4ED; }
+.small-warm { font-size: 14px; color: #B8B0A4; }
+.lw-panel .phone-shot { border-color: #0B0A09; background: #141312; }
+
+/* Drawn weekly summary card (matches the app's Insights styling) */
+.lw-card {
+  width: 240px; flex: none; box-sizing: border-box;
+  background: #23211E; color: #F8F4ED; border: 1px solid #3A3530; border-radius: 26px; padding: 22px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+  display: flex; flex-direction: column; gap: 12px; font-size: 14px;
+}
+.lw-card .k { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #B8B0A4; font-weight: 600; }
+.lw-card .big { font-size: 34px; font-weight: 700; color: #8CC63F; letter-spacing: -0.02em; line-height: 1; }
+.lw-card .sub { color: #B8B0A4; font-size: 13px; }
+.lw-bars { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px; align-items: end; height: 92px; }
+.lw-bars div { display: flex; flex-direction: column; align-items: center; gap: 6px; height: 100%; justify-content: flex-end; }
+.lw-bars i { display: block; width: 100%; border-radius: 6px; background: #8CC63F; }
+.lw-bars span { font-size: 11px; color: #9C9488; }
+.lw-card .goal { background: #1C1A18; border-radius: 14px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
+.lw-card .goal b { font-size: 13px; }
+.lw-card .track { height: 6px; border-radius: 3px; background: #3A3530; overflow: hidden; }
+.lw-card .track i { display: block; height: 100%; width: 65%; background: #8CC63F; }
+.lw-card .lw-share { border-radius: 12px; padding: 11px 12px; text-align: center; font-weight: 600; background: #F5F1E9; color: #1F1812; }
+.cc-phones .lw-card { margin-top: 140px; }
+@media (max-width: 640px) { .cc-phones .lw-card { margin-top: 0; width: 250px; } }
