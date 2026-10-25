@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rank'd Support, Privacy &amp; Terms — Blank Studio</title>
+  <meta name="description" content="Get help with Rank'd and read its privacy policy and terms of use.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta property="og:site_name" content="Blank Studio">
+  <meta property="og:image" content="https://blankstudio91.github.io/images/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>(function(){try{var t=localStorage.getItem('theme');if(!t){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="wrap site-header">
+    <a class="brand" href="index.html" aria-label="Blank Studio home">
+      <img class="logo-mark" src="images/logo-mark.svg" alt="" width="26" height="26">
+      <img class="logo-word" src="images/logo-wordmark.svg" alt="" width="120" height="17">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#apps">Apps</a>
+      <a href="about.html">About</a>
+      <a href="support.html" aria-current="page">Support</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Dark mode" aria-pressed="false">
+      <span class="track">
+        <span class="knob">
+          <svg class="icon-sun" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg>
+        </span>
+      </span>
+    </button>
+  </header>
+
+  <main id="main">
+    <section class="wrap support-hero">
+      <div>
+        <div class="app-chip">
+          <img src="images/rankd-icon.jpg" alt="" width="44" height="44">
+          <span>Rank'd</span>
+        </div>
+        <h1 class="serif">Support <em>&amp; privacy</em></h1>
+      </div>
+      <nav class="app-switch" aria-label="Choose an app">
+        <a href="support.html"><img src="images/tracklore-icon.jpg" alt="" width="34" height="34">TrackLore</a>
+        <a href="chesscapture-support.html"><img src="images/chesscapture-icon.jpg" alt="" width="34" height="34">ChessCapture</a>
+        <a href="livewage-support.html"><img src="images/livewage-icon.jpg" alt="" width="34" height="34">Live Wage</a>
+        <a href="rankd-support.html" aria-current="page"><img src="images/rankd-icon.jpg" alt="" width="34" height="34">Rank'd</a>
+      </nav>
+    </section>
+
+    <div class="wrap support-layout">
+      <nav class="toc" aria-label="On this page">
+        <a href="#contact">Contact support</a>
+        <a href="#faq">Common questions</a>
+        <a href="#privacy">Privacy policy</a>
+        <a href="#terms">Terms of use</a>
+      </nav>
+
+      <div class="support-main">
+        <section id="contact" aria-labelledby="contact-h">
+          <h2 id="contact-h" class="serif">Contact support</h2>
+          <p class="copy">Score look off, or have an idea? Send us a message. If a score seems wrong, tell us which category and metric it's about. Please don't send your personal stats, health details or finances.</p>
+          <!--
+            VISUAL ONLY for now: submitting does nothing.
+            To make it work later: create a free form at formspree.io with the business email,
+            then add  action="https://formspree.io/f/YOUR_FORM_ID" method="POST"  to the <form> tag
+            and delete  onsubmit="return false;"
+          -->
+          <form class="support-form" onsubmit="return false;">
+            <input type="hidden" name="app" value="Rank'd">
+            <div class="field-row">
+              <div class="field">
+                <label for="rk-name">Name</label>
+                <input id="rk-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="rk-email">Email</label>
+                <input id="rk-email" name="email" type="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="rk-subject">Subject</label>
+              <select id="rk-subject" name="subject">
+                <option>Scores or my card</option>
+                <option>Apple Health import</option>
+                <option>Squad, sharing or leaderboard</option>
+                <option>Quests or progress</option>
+                <option>Feature idea</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="rk-message">Message</label>
+              <textarea id="rk-message" name="message" rows="6" required></textarea>
+            </div>
+            <button class="btn btn-solid" type="submit">Send message</button>
+            <p class="form-note">We only use what you send to reply to you.</p>
+          </form>
+        </section>
+
+        <section id="faq" aria-labelledby="faq-h">
+          <h2 id="faq-h" class="serif">Common questions</h2>
+          <div class="faq">
+            <details open>
+              <summary>How is my overall score worked out?</summary>
+              <p>Rank'd scores each category you've rated (Fitness, Wellness, Money, Learning, Career and Life) from the stats you enter, then combines them into one overall rating. Your tier, from Bronze to Legend, comes from that score. The more stats you add, the higher your confidence score. You can choose which categories and metrics count in Settings.</p>
+            </details>
+            <details>
+              <summary>Is my information sent anywhere?</summary>
+              <p>No. Your profile, stats, goals, friends and history are saved only on your iPhone. Rank'd has no account and doesn't send your information to us. The only exception is the optional Game Center leaderboard: if you turn on Publish my OVR, your overall score (and nothing else) is sent to Apple's Game Center.</p>
+            </details>
+            <details>
+              <summary>What does Rank'd read from Apple Health?</summary>
+              <p>Only if you allow it: VO₂ max, resting heart rate, steps, sleep, workouts, body fat, weight and biological sex. Rank'd only reads, never writes to Health, and uses this data on your device only to fill in your stats.</p>
+            </details>
+            <details>
+              <summary>How do friends work?</summary>
+              <p>You add friends to your squad yourself, with their permission, by entering their stats. They're saved on your device only. To compare with someone who isn't nearby, share your card or a head-to-head comparison as an image.</p>
+            </details>
+            <details>
+              <summary>Can I hide things on my shared card?</summary>
+              <p>Yes. In Settings you can choose whether shared cards show category scores, money or income, wellness details and other sensitive stats. Your full data stays on your device either way.</p>
+            </details>
+            <details>
+              <summary>How do I delete my data?</summary>
+              <p>Use Reset All Data in Settings to remove your profile, stats, goals, friends and progress history, or delete the app to remove everything it has stored.</p>
+            </details>
+          </div>
+        </section>
+
+        <!-- When the policy changes, update the effective date below. -->
+        <section id="privacy" aria-labelledby="privacy-h">
+          <h2 id="privacy-h" class="serif">Privacy policy</h2>
+          <span class="muted" style="font-size: 14px">Rank'd · Effective October 25, 2026</span>
+          <div class="policy">
+            <p>Rank'd turns information you enter about yourself into scores and a shareable player card. This policy explains what information the app handles, how it is used, and the choices available to you. In short: everything you enter stays on your device, and we do not collect it.</p>
+
+            <div>
+              <h3>1. Information you enter</h3>
+              <p>To build your card, Rank'd lets you enter information about yourself, such as your name, age, height, weight, an optional photo and tagline, and stats in the categories you choose to rate. These can include fitness (such as workouts, push-ups, mile time and steps), wellness (such as sleep, body fat, resting heart rate and vision), money (such as monthly income, savings and debt), learning, career (such as education, certifications, experience and job title) and lifestyle. Every stat is optional. You can also create goals (“quests”), weekly check-ins and card preferences.</p>
+              <p style="margin-top: 12px">This information, along with your scores and progress history, is stored only on your device using iOS file protection. It is not uploaded to our servers, and we cannot see it. If you add a photo, you choose it with the iOS photo picker; Rank'd only receives the photo you select.</p>
+            </div>
+
+            <div>
+              <h3>2. Apple Health</h3>
+              <p>If you choose Import from Health and grant permission, Rank'd reads the following from Apple Health: VO₂ max, resting heart rate, step count, sleep analysis, workouts, body fat percentage, body weight and biological sex. Rank'd only reads this data; it never writes to Health. Health data is used on your device only to fill in your stats and calculate your scores. It is never sent to us or to any third party, and it is never used for advertising, marketing or data mining. You can change or revoke this permission at any time in the iOS Settings or Health app.</p>
+            </div>
+
+            <div>
+              <h3>3. Friends you add</h3>
+              <p>The Squad feature lets you add friends by entering their name, optional photo and stats yourself. This information is stored only on your device and is used only to show rankings and comparisons. Please add someone only with their permission, and only with information they are comfortable sharing with you.</p>
+            </div>
+
+            <div>
+              <h3>4. Information we do not collect</h3>
+              <p>Rank'd does not require an account and does not collect your contact details, location, contacts or device identifiers. The app contains no advertising, analytics or tracking tools, and we do not sell or share personal information.</p>
+            </div>
+
+            <div>
+              <h3>5. How your information is used</h3>
+              <p>The information you enter or import is used on your device only to calculate your scores, tier and level, display your cards, compare you with friends you've added, track your goals and progress, and show your history.</p>
+            </div>
+
+            <div>
+              <h3>6. Sharing cards</h3>
+              <p>If you share a card or a head-to-head comparison, the app creates an image and opens the iOS share sheet. The image is sent only to the app or person you choose, and that app's privacy policy applies from then on. Before sharing, you can choose in Settings whether shared cards show category scores, money or income, wellness details and other sensitive stats.</p>
+            </div>
+
+            <div>
+              <h3>7. Game Center leaderboard (optional)</h3>
+              <p>The leaderboard is off by default. If you turn on Publish my OVR, Rank'd signs in to Apple's Game Center and submits your overall score only — no category scores, stats or profile details. Your score appears on the leaderboard with your Game Center name and is handled by Apple under its privacy policy. You can turn the leaderboard off at any time in Settings.</p>
+            </div>
+
+            <div>
+              <h3>8. App lock, backups and diagnostics</h3>
+              <p>If you turn on the app lock, iOS checks your Face ID, Touch ID or passcode; Rank'd never sees your biometric data. Because your data is stored on your device, it may be included in your device backups (such as iCloud or computer backups) according to your own settings; those backups are handled by Apple under its privacy policy. If you have chosen to share analytics with app developers in your iOS settings, Apple may provide us with anonymous crash reports.</p>
+            </div>
+
+            <div>
+              <h3>9. Deleting your data</h3>
+              <p>You can edit or remove any stat in the app, remove friends from your squad, use Reset All Data in Settings to remove your profile, stats, goals, friends and progress history, or delete the app to remove all data it has stored on your device. Deleting data in Rank'd does not delete data stored in Apple Health.</p>
+            </div>
+
+            <div>
+              <h3>10. Contacting us</h3>
+              <p>If you contact support, we receive the information you choose to send, such as your name, email address and message. We use it only to respond to you and to improve the app, and we delete it when it is no longer needed. Please do not send us your personal stats, health information or financial details.</p>
+            </div>
+
+            <div>
+              <h3>11. Children</h3>
+              <p>Rank'd is not directed to children under 13 and does not knowingly collect personal information from anyone. If you believe a child has sent us personal information through support, contact us and we will delete it.</p>
+            </div>
+
+            <div>
+              <h3>12. Changes to this policy</h3>
+              <p>We may update this policy as the app changes. The effective date above will show when it was last updated, and material changes will be communicated when required.</p>
+            </div>
+
+            <div>
+              <h3>13. Contact</h3>
+              <p>For privacy questions or requests, use the <a href="#contact">contact form</a> or email <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a>.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- When the terms change, update the effective date below. -->
+        <section id="terms" aria-labelledby="terms-h">
+          <h2 id="terms-h" class="serif">Terms of use</h2>
+          <span class="muted" style="font-size: 14px">Rank'd · Effective October 25, 2026</span>
+          <div class="policy">
+            <div>
+              <h3>1. Acceptance of terms</h3>
+              <p>By downloading or using Rank'd (“the App”), you agree to these Terms of Use (“Terms”). If you do not agree, do not use the App. Rank'd is developed and published by Blank Studio (“we,” “us,” or “our”). Our <a href="#privacy">Privacy Policy</a> explains how the App handles information and is part of these Terms.</p>
+            </div>
+
+            <div>
+              <h3>2. Description of the service</h3>
+              <p>Rank'd is a personal progress app that uses information you enter, and optionally import from Apple Health, to calculate scores across life categories, an overall rating, a tier and a level, shown on a player card. It also lets you set goals, track progress, compare cards with friends you add, share card images and, if you choose, post your overall score to a Game Center leaderboard.</p>
+            </div>
+
+            <div>
+              <h3>3. For fun and motivation — not professional advice</h3>
+              <p>Scores, tiers, percentiles and comparisons in the App are for entertainment, motivation and personal goal-setting only. They are based on simplified models, general reference data and the information you provide, and may not be accurate for you. They are not medical, health, fitness, nutritional, financial or career advice, are not a diagnosis or assessment of any kind, and are not a measure of anyone's worth. Talk to a qualified professional before making health, fitness or financial decisions, and stop any activity that causes pain or discomfort.</p>
+            </div>
+
+            <div>
+              <h3>4. Eligibility</h3>
+              <p>You must be at least 13 years old to use the App. If you are under the age of majority where you live, you may use the App only with the involvement of a parent or guardian.</p>
+            </div>
+
+            <div>
+              <h3>5. License to use the App</h3>
+              <p>We grant you a personal, non-exclusive, non-transferable, revocable license to use the App on Apple devices you own or control, as permitted by the App Store Usage Rules. The App is licensed, not sold. Apple's Licensed Application End User License Agreement also applies to your use of the App; where these Terms are more specific, they apply in addition to it.</p>
+            </div>
+
+            <div>
+              <h3>6. Your information and other people's</h3>
+              <p>You are responsible for the information you enter. Only add another person to your squad with their permission, and only include information they have agreed to share with you. Your data is stored only on your device; we cannot recover it if your device is lost or reset or the App is deleted, except through your own device backups.</p>
+            </div>
+
+            <div>
+              <h3>7. Sharing and acceptable use</h3>
+              <p>You are responsible for the cards and comparisons you share and who you share them with. Do not use the App to harass, shame, bully or misrepresent anyone, to share another person's information without their consent, or for any unlawful purpose. Do not decompile, modify or reverse engineer the App except where the law expressly permits it, interfere with its operation or security, or attempt to manipulate leaderboard scores.</p>
+            </div>
+
+            <div>
+              <h3>8. Apple Health and Game Center</h3>
+              <p>Apple Health and Game Center are provided by Apple and are subject to Apple's terms and privacy policy. Your use of the leaderboard is optional, and we may reset or remove leaderboard entries that appear to be inaccurate or abusive. We are not responsible for the availability of these services.</p>
+            </div>
+
+            <div>
+              <h3>9. Intellectual property</h3>
+              <p>The App itself, including its name, design, code, card artwork and logo, belongs to Blank Studio and is protected by copyright and other intellectual property laws. You keep ownership of the content you enter, such as your photo and stats.</p>
+            </div>
+
+            <div>
+              <h3>10. Changes and availability</h3>
+              <p>We may update, change or discontinue features of the App at any time, including how scores, tiers and levels are calculated. Changes to scoring may change your scores.</p>
+            </div>
+
+            <div>
+              <h3>11. Disclaimer</h3>
+              <p>The App is provided “as is” and “as available,” without warranties of any kind, to the maximum extent permitted by law. We do not guarantee that any score, ranking or comparison will be accurate, complete or current.</p>
+            </div>
+
+            <div>
+              <h3>12. Limitation of liability</h3>
+              <p>To the maximum extent permitted by law, Blank Studio is not liable for any indirect, incidental or consequential damages, or for any injury, health, financial or other decisions, losses or loss of data, arising from your use of or inability to use the App or reliance on its scores. Our total liability for any claim relating to the App will not exceed the amount you paid for the App in the twelve months before the claim. Some jurisdictions do not allow these limitations, so they may not apply to you.</p>
+            </div>
+
+            <div>
+              <h3>13. Termination</h3>
+              <p>You may stop using the App at any time by deleting it. These Terms end automatically if you violate them.</p>
+            </div>
+
+            <div>
+              <h3>14. Apple</h3>
+              <p>These Terms are between you and Blank Studio, not Apple. Apple is not responsible for the App or its content and has no obligation to provide maintenance or support for it. If the App fails to conform to an applicable warranty, you may notify Apple, and Apple may refund the purchase price, if any; Apple has no other warranty obligation for the App. Apple is not responsible for addressing any claims relating to the App, including product liability, legal or regulatory compliance, consumer protection or intellectual property claims. Apple and its subsidiaries are third-party beneficiaries of these Terms and may enforce them against you.</p>
+            </div>
+
+            <div>
+              <h3>15. Changes to these terms</h3>
+              <p>We may update these Terms from time to time. Changes take effect when posted, and the effective date above will be updated. Continued use of the App after changes are posted means you accept the revised Terms.</p>
+            </div>
+
+            <div>
+              <h3>16. Governing law</h3>
+              <p>These Terms are governed by the laws of the State of New York, United States, without regard to conflict-of-law principles. Nothing in these Terms limits any consumer protection rights you have under the mandatory laws of the country where you live.</p>
+            </div>
+
+            <div>
+              <h3>17. Contact</h3>
+              <p>For questions about these Terms, use the <a href="#contact">contact form</a> or email <a href="mailto:[SUPPORT EMAIL]">[SUPPORT EMAIL]</a>.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="wrap site-footer">
+    <div class="footer-row">
+      <a class="brand footer-brand" href="index.html" aria-label="Blank Studio home">
+        <img class="logo-mark" src="images/logo-mark.svg" alt="" width="26" height="26">
+        <img class="logo-word" src="images/logo-wordmark.svg" alt="" width="120" height="17">
+      </a>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="tracklore.html">TrackLore</a>
+        <a href="chesscapture.html">ChessCapture</a>
+        <a href="livewage.html">Live Wage</a>
+        <a href="rankd.html">Rank'd</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+    <span class="copyright">© 2026 Blank Studio</span>
+  </footer>
+
+  <script src="js/theme.js"></script>
+</body>
+</html>
